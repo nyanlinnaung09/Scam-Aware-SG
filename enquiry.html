@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquiry</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="final.html" class="brand">Scam<span>Aware</span> SG</a>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="final.html">Home</a></li>
+      <li><a href="job_scam.html">Job Scams</a></li>
+      <li><a href="e_commerce.html">E-commerce</a></li>
+      <li><a href="phishing.html">Phishing</a></li>
+      <li><a href="our_part.html">Our Part</a></li>
+      <li><a href="enquiry.html" class="active">Enquiry</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="detail-hero">
+  <div class="container">
+    <span class="eyebrow">Get In Touch</span>
+    <h1>Have a question, or think you've been scammed?</h1>
+    <p>Fill in the form below and we'll follow up with guidance specific to your situation.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="form-wrap">
+      <div class="form-status"></div>
+      <form id="enquiry-form" novalidate>
+
+        <div class="form-group" data-field="name">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Tan Wei Ming">
+          <div class="error-msg">Please enter your name.</div>
+        </div>
+
+        <div class="form-group" data-field="email">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="e.g. weiming@email.com">
+          <div class="error-msg">Please enter a valid email address.</div>
+        </div>
+
+        <div class="form-group" data-field="phone">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. 9123 4567">
+          <div class="error-msg">Please enter a valid phone number.</div>
+        </div>
+
+        <div class="form-group" data-field="scamType">
+          <label for="scamType">Which scam type is this about?</label>
+          <select id="scamType" name="scamType">
+            <option value="phishing">Phishing</option>
+            <option value="e-commerce">E-commerce</option>
+            <option value="job">Job</option>
+            <option value="other">Other / General Question</option>
+          </select>
+          <div class="error-msg">Please select a scam type.</div>
+        </div>
+
+        <div class="form-group" data-field="message">
+          <label for="message">Tell us what happened</label>
+          <textarea id="message" name="message" placeholder="Describe your situation or drop a question"></textarea>
+          <div class="error-msg">Please tell us more.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;">Submit Enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 ScamAware SG</p>
+    <p>For more information, visit <a href="https://www.scamshield.gov.sg" target="_blank">scamshield.gov.sg</a></p>
+    <p style="margin-top:6px;">In an emergency, call the police at <strong>999</strong> or the Anti-Scam Helpline at <strong>1800-722-6688</strong>.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
